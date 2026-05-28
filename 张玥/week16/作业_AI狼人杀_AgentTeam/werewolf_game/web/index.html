@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI 狼人杀 Agent Team 观战台</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Week16 Bonus · FastAPI 单页前端</p>
+          <h1>AI 狼人杀 Agent Team 观战台</h1>
+          <p class="hero-text">
+            创建一局纯 AI 对战，观察狼人、预言家、女巫、猎人和村民在信息隔离下的发言、投票、死亡结算与复盘。
+          </p>
+        </div>
+        <div class="control-card">
+          <label for="seedInput">随机种子</label>
+          <div class="seed-row">
+            <input id="seedInput" type="number" value="2026" />
+            <button id="createGameBtn">创建对局</button>
+          </div>
+          <button id="runGameBtn" class="secondary" disabled>运行完整对局</button>
+          <button id="evolutionBtn" class="ghost">运行 3 局自进化</button>
+          <p id="statusText" class="status">等待创建对局。</p>
+        </div>
+      </section>
+
+      <section class="summary-grid">
+        <article class="panel">
+          <span class="panel-label">对局 ID</span>
+          <strong id="gameIdText">-</strong>
+        </article>
+        <article class="panel">
+          <span class="panel-label">胜利阵营</span>
+          <strong id="winnerText">未开始</strong>
+        </article>
+        <article class="panel">
+          <span class="panel-label">总天数</span>
+          <strong id="dayText">0</strong>
+        </article>
+      </section>
+
+      <section class="content-grid">
+        <article class="section-card">
+          <div class="section-heading">
+            <h2>玩家席位</h2>
+            <p>观战视角会展示完整身份；游戏内部仍通过 PlayerView 做信息隔离。</p>
+          </div>
+          <div id="players" class="players empty">暂无玩家，请先创建对局。</div>
+        </article>
+
+        <article class="section-card">
+          <div class="section-heading">
+            <h2>复盘摘要</h2>
+            <p>对局结束后由 Evaluator 生成。</p>
+          </div>
+          <div id="review" class="review-box">暂无复盘。</div>
+        </article>
+      </section>
+
+      <section class="section-card">
+        <div class="section-heading">
+          <h2>对局时间线</h2>
+          <p>夜晚行动、白天发言、投票和死亡记录会按顺序展示。</p>
+        </div>
+        <div id="timeline" class="timeline empty">暂无事件。</div>
+      </section>
+
+      <section class="section-card">
+        <div class="section-heading">
+          <h2>自进化实验</h2>
+          <p>连续运行多局，查看角色经验如何沉淀到 memory。</p>
+        </div>
+        <div id="evolution" class="evolution empty">暂无自进化结果。</div>
+      </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>

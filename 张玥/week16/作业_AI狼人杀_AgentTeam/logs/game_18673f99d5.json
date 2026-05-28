@@ -1,0 +1,194 @@
+{
+  "game_id": "game_18673f99d5",
+  "config_name": "standard_6",
+  "players": [
+    {
+      "id": 0,
+      "name": "玩家0",
+      "role": "hunter",
+      "style": "cautious",
+      "alive": true
+    },
+    {
+      "id": 1,
+      "name": "玩家1",
+      "role": "werewolf",
+      "style": "aggressive",
+      "alive": true
+    },
+    {
+      "id": 2,
+      "name": "玩家2",
+      "role": "witch",
+      "style": "random",
+      "alive": true
+    },
+    {
+      "id": 3,
+      "name": "玩家3",
+      "role": "villager",
+      "style": "balanced",
+      "alive": false
+    },
+    {
+      "id": 4,
+      "name": "玩家4",
+      "role": "seer",
+      "style": "cautious",
+      "alive": false
+    },
+    {
+      "id": 5,
+      "name": "玩家5",
+      "role": "werewolf",
+      "style": "aggressive",
+      "alive": true
+    }
+  ],
+  "dialogues": [
+    {
+      "day": 1,
+      "phase": "day_speech",
+      "player_id": 0,
+      "player_name": "玩家0",
+      "role": "hunter",
+      "content": "我是偏强势的好人视角，会重点看谁在推动错误票型。",
+      "visible_to": "public"
+    },
+    {
+      "day": 1,
+      "phase": "day_speech",
+      "player_id": 1,
+      "player_name": "玩家1",
+      "role": "werewolf",
+      "content": "我目前更关注发言摇摆的人。历史经验：狼人本局阵营获胜，下一局保持当前核心策略，并继续利用公开信息。。我建议大家不要盲目跟票。",
+      "visible_to": "public"
+    },
+    {
+      "day": 1,
+      "phase": "day_speech",
+      "player_id": 2,
+      "player_name": "玩家2",
+      "role": "witch",
+      "content": "我会重点观察投票异常的人。历史经验：女巫阵营失败，下一局应更谨慎使用毒药，并优先保护疑似强神。。",
+      "visible_to": "public"
+    },
+    {
+      "day": 1,
+      "phase": "day_speech",
+      "player_id": 3,
+      "player_name": "玩家3",
+      "role": "villager",
+      "content": "我没有额外信息，会根据公开发言和投票记录找矛盾点。",
+      "visible_to": "public"
+    },
+    {
+      "day": 1,
+      "phase": "day_speech",
+      "player_id": 5,
+      "player_name": "玩家5",
+      "role": "werewolf",
+      "content": "我目前更关注发言摇摆的人。历史经验：狼人本局阵营获胜，下一局保持当前核心策略，并继续利用公开信息。。我建议大家不要盲目跟票。",
+      "visible_to": "public"
+    }
+  ],
+  "nights": [
+    {
+      "day": 1,
+      "wolf_target": 4,
+      "seer_check": {
+        "seer_id": 4,
+        "target_id": 0,
+        "camp": "good"
+      },
+      "witch_save": null,
+      "witch_poison": null,
+      "deaths": [
+        {
+          "day": 1,
+          "player_id": 4,
+          "role": "seer",
+          "reason": "night"
+        }
+      ]
+    }
+  ],
+  "votes": [
+    {
+      "day": 1,
+      "voter_id": 0,
+      "target_id": 1,
+      "reason": "根据公开发言、历史经验和当前策略投票。"
+    },
+    {
+      "day": 1,
+      "voter_id": 1,
+      "target_id": 3,
+      "reason": "根据公开发言、历史经验和当前策略投票。"
+    },
+    {
+      "day": 1,
+      "voter_id": 2,
+      "target_id": 3,
+      "reason": "根据公开发言、历史经验和当前策略投票。"
+    },
+    {
+      "day": 1,
+      "voter_id": 3,
+      "target_id": 2,
+      "reason": "根据公开发言、历史经验和当前策略投票。"
+    },
+    {
+      "day": 1,
+      "voter_id": 5,
+      "target_id": 3,
+      "reason": "根据公开发言、历史经验和当前策略投票。"
+    }
+  ],
+  "deaths": [
+    {
+      "day": 1,
+      "player_id": 4,
+      "role": "seer",
+      "reason": "night"
+    },
+    {
+      "day": 1,
+      "player_id": 3,
+      "role": "villager",
+      "reason": "vote"
+    }
+  ],
+  "winner": "evil",
+  "day_count": 1,
+  "review": {
+    "winner": "evil",
+    "winner_cn": "狼人阵营",
+    "days": 1,
+    "total_dialogues": 5,
+    "total_votes": 5,
+    "most_voted_player": 3,
+    "death_order": [
+      4,
+      3
+    ],
+    "role_tips": {
+      "hunter": [
+        "猎人阵营失败，下一局应在发言中更明确表达怀疑对象，死亡时提高带走狼人的概率。"
+      ],
+      "werewolf": [
+        "狼人本局阵营获胜，下一局保持当前核心策略，并继续利用公开信息。"
+      ],
+      "witch": [
+        "女巫阵营失败，下一局应更谨慎使用毒药，并优先保护疑似强神。"
+      ],
+      "villager": [
+        "村民阵营失败，下一局应更重视历史投票和发言矛盾，避免被狼人带票。"
+      ],
+      "seer": [
+        "预言家阵营失败，下一局应更早公开关键查验信息，帮助好人形成票型。"
+      ]
+    },
+    "summary": "本局共进行 1 天，最终 狼人阵营 获胜。共产生 5 条发言、5 条投票记录，死亡顺序为 [4, 3]。"
+  }
+}

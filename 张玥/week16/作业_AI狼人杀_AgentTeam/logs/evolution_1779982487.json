@@ -1,0 +1,157 @@
+{
+  "rounds": 3,
+  "records": [
+    {
+      "round": 1,
+      "game_id": "game_0ef81d6668",
+      "winner": "evil",
+      "days": 1,
+      "review": {
+        "winner": "evil",
+        "winner_cn": "狼人阵营",
+        "days": 1,
+        "total_dialogues": 5,
+        "total_votes": 5,
+        "most_voted_player": 3,
+        "death_order": [
+          4,
+          3
+        ],
+        "role_tips": {
+          "hunter": [
+            "猎人阵营失败，下一局应在发言中更明确表达怀疑对象，死亡时提高带走狼人的概率。"
+          ],
+          "werewolf": [
+            "狼人本局阵营获胜，下一局保持当前核心策略，并继续利用公开信息。"
+          ],
+          "witch": [
+            "女巫阵营失败，下一局应更谨慎使用毒药，并优先保护疑似强神。"
+          ],
+          "villager": [
+            "村民阵营失败，下一局应更重视历史投票和发言矛盾，避免被狼人带票。"
+          ],
+          "seer": [
+            "预言家阵营失败，下一局应更早公开关键查验信息，帮助好人形成票型。"
+          ]
+        },
+        "summary": "本局共进行 1 天，最终 狼人阵营 获胜。共产生 5 条发言、5 条投票记录，死亡顺序为 [4, 3]。"
+      }
+    },
+    {
+      "round": 2,
+      "game_id": "game_c547813974",
+      "winner": "evil",
+      "days": 2,
+      "review": {
+        "winner": "evil",
+        "winner_cn": "狼人阵营",
+        "days": 2,
+        "total_dialogues": 6,
+        "total_votes": 6,
+        "most_voted_player": 4,
+        "death_order": [
+          4,
+          3
+        ],
+        "role_tips": {
+          "seer": [
+            "预言家阵营失败，下一局应更早公开关键查验信息，帮助好人形成票型。"
+          ],
+          "werewolf": [
+            "狼人本局阵营获胜，下一局保持当前核心策略，并继续利用公开信息。"
+          ],
+          "hunter": [
+            "猎人阵营失败，下一局应在发言中更明确表达怀疑对象，死亡时提高带走狼人的概率。"
+          ],
+          "villager": [
+            "村民阵营失败，下一局应更重视历史投票和发言矛盾，避免被狼人带票。"
+          ],
+          "witch": [
+            "女巫阵营失败，下一局应更谨慎使用毒药，并优先保护疑似强神。"
+          ]
+        },
+        "summary": "本局共进行 2 天，最终 狼人阵营 获胜。共产生 6 条发言、6 条投票记录，死亡顺序为 [4, 3]。"
+      }
+    },
+    {
+      "round": 3,
+      "game_id": "game_359ff9ebbb",
+      "winner": "evil",
+      "days": 2,
+      "review": {
+        "winner": "evil",
+        "winner_cn": "狼人阵营",
+        "days": 2,
+        "total_dialogues": 6,
+        "total_votes": 6,
+        "most_voted_player": 1,
+        "death_order": [
+          1,
+          2,
+          5
+        ],
+        "role_tips": {
+          "witch": [
+            "女巫阵营失败，下一局应更谨慎使用毒药，并优先保护疑似强神。"
+          ],
+          "villager": [
+            "村民阵营失败，下一局应更重视历史投票和发言矛盾，避免被狼人带票。"
+          ],
+          "hunter": [
+            "猎人阵营失败，下一局应在发言中更明确表达怀疑对象，死亡时提高带走狼人的概率。"
+          ],
+          "werewolf": [
+            "狼人本局阵营获胜，下一局保持当前核心策略，并继续利用公开信息。"
+          ],
+          "seer": [
+            "预言家阵营失败，下一局应更早公开关键查验信息，帮助好人形成票型。"
+          ]
+        },
+        "summary": "本局共进行 2 天，最终 狼人阵营 获胜。共产生 6 条发言、6 条投票记录，死亡顺序为 [1, 2, 5]。"
+      }
+    }
+  ],
+  "memory_path": "D:\\AI_study_env\\files\\study\\Week16\\homework\\作业_AI狼人杀_AgentTeam\\memory\\role_experience.json",
+  "final_memory": {
+    "villager": {
+      "games": 10,
+      "wins": 0,
+      "losses": 10,
+      "tips": [
+        "村民阵营失败，下一局应更重视历史投票和发言矛盾，避免被狼人带票。"
+      ]
+    },
+    "seer": {
+      "games": 10,
+      "wins": 0,
+      "losses": 10,
+      "tips": [
+        "预言家阵营失败，下一局应更早公开关键查验信息，帮助好人形成票型。"
+      ]
+    },
+    "witch": {
+      "games": 10,
+      "wins": 0,
+      "losses": 10,
+      "tips": [
+        "女巫阵营失败，下一局应更谨慎使用毒药，并优先保护疑似强神。"
+      ]
+    },
+    "werewolf": {
+      "games": 10,
+      "wins": 10,
+      "losses": 0,
+      "tips": [
+        "狼人本局阵营获胜，下一局保持当前核心策略，并继续利用公开信息。"
+      ]
+    },
+    "hunter": {
+      "games": 10,
+      "wins": 0,
+      "losses": 10,
+      "tips": [
+        "猎人阵营失败，下一局应在发言中更明确表达怀疑对象，死亡时提高带走狼人的概率。"
+      ]
+    }
+  }
+}
